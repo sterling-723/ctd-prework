@@ -7,13 +7,6 @@ body {
   align-items: center;
 }
 
-.weatherForm {
-  display: flex; /* Enables flexbox layout for the form */
-  flex-direction: column; /* Stacks form elements vertically */
-  align-items: center; /* Centers form elements horizontally */
-  justify-content: flex-start;
-}
-
 .weatherCard {
   margin: 20px;
   background: linear-gradient(180deg, rgb(0, 234, 255), orange);
@@ -26,8 +19,7 @@ body {
   flex-direction: column;
 }
 
-.latitudeInput,
-.longitudeInput {
+.cityInput {
   padding: 10px;
   font-size: 1.5rem;
   font-weight: bold;
