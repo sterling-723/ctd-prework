@@ -67,6 +67,7 @@ function displayWeatherInfo(data, name) {
   } = data;
   weatherCard.textContent = "";
   weatherCard.style.display = "flex";
+  console.log(weather_code);
 
   const cardCity = document.createElement("h1");
   const cardTemp = document.createElement("h1");
@@ -93,24 +94,24 @@ function displayWeatherInfo(data, name) {
   weatherCard.appendChild(weatherEmoji);
 }
 function getWeatherEmoji(weatherId) {
-  if (weatherId < 200) {
+  if (weatherId === 0) {
     return "☀️";
-  } else if (weatherId > 200) {
-    return "⛈️";
-  } else if (weatherId < 531) {
-    return "🌧️";
-  } else if (weatherId < 622) {
-    return "☃️";
-  } else if (weatherId == 711 || weatherId == 721) {
-    return "🔥";
-  } else if (weatherId < 762) {
-    return "🌋";
-  } else if (weatherId == 781) {
-    return "🌪️";
-  } else if (weatherId >= 801 && weatherId <= 802) {
+  } else if (weatherId === 1) {
     return "🌤️";
-  } else if (weatherId >= 803 && weatherId <= 804) {
+  } else if (weatherId === 2) {
     return "⛅️";
+  } else if (weatherId === 3) {
+    return "☁️";
+  } else if (weatherId === 45) {
+    return "🌫️";
+  } else if (weatherId === 51 || weatherId === 53 || weatherId === 55) {
+    return "☔️";
+  } else if (weatherId >= 61 && weatherId <= 82) {
+    return "🌧️";
+  } else if (weatherId >= 83 && weatherId <= 87) {
+    return "☃️";
+  } else if (weatherId >= 95 && weatherId <= 99) {
+    return "⛈️";
   }
 }
 
