@@ -7,4 +7,4 @@ Steps To Use:
 1. Enter a valid city in the "City" input field.
 2. Click "Get Weather".
    
-_ The valid weather data will return._
+_The valid weather data will return._
